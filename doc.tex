@@ -12,6 +12,13 @@
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
+\newcommand{\dicen}[1]{
+  \textbf{#1}
+}
+\usepackage{lipsum}
+
+\usepackage{multicol}
+
 \begin{document}
 \begin{titlepage}
   \begin{center}
@@ -36,7 +43,7 @@
 
     % Title
     \HRule \\[0.4cm]
-    { \huge \bfseries <Nazwa aplikacji>  \\[0.4cm] }
+    { \huge \bfseries <Dwulinijkowa>\\<nazwa projektu>  \\[0.4cm] }
 
     \HRule \\[1.5cm]
 
@@ -59,18 +66,8 @@
   \end{center}
 \end{titlepage}
 \section{\Large Słownik pojęć}
-\begin{minipage}{0.45\textwidth}
-  {\emph \large trening} - zestaw ćwiczeń mający na celu podniesienie sprawności fizycznej organizmu \\
-  {\emph \large jogging} - <placeholder>\\
-  {\emph \large interwały} - <placeholder>\\
-  {\emph \large rozgrzewka} - <placeholder>\\
-  {\emph \large trening kondycyjny} -  trening kładący szczególny nacisk na polepszenie kondycji\\
-  {\emph \large more} - <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> \\
-  {\emph \large more} - <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> \\
-\end{minipage}
-\begin{minipage}{0.45\textwidth}
-  {\emph \large more} - <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> \\
-  {\emph \large more} - <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> <placeholder> \\
-\end{minipage}
+\begin{multicols}{2}
+  \include{./slownik_pojec}
+\end{multicols}
 \end{document}
 
