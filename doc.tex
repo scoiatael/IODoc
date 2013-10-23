@@ -13,7 +13,7 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 \newcommand{\dicen}[1]{
-  \textbf{#1}
+  \indent\textbf{#1}
 }
 \usepackage{lipsum}
 
@@ -24,13 +24,22 @@
 %\DeclareFontShape{EU1}{ptm}{m}{sc} { <-> ssub * cmr/m/sc }{}
 
 \begin{document}
-  \include{./titlepage}
-  \include{./rewers}
-  \tableofcontents
+  \input{./titlepage}
   \pagebreak
+  \input{./rewers}
+  \thispagestyle{empty}
+  \tableofcontents
+  \thispagestyle{empty}
+  \pagebreak
+\section{\Large Założenia ogólne}
+  \input{./zalozenia}
+  \clearpage
 \section{\Large Słownik pojęć}
 \begin{multicols}{2}
-  \include{./slownik_pojec}
+  \input{./slownik_pojec}
 \end{multicols}
+\clearpage
+\section{\Large Harmonogram}
+\section{\Large Kosztorys}
 \end{document}
 

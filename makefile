@@ -1,4 +1,4 @@
-doc.pdf : doc.tex slownik_pojec.tex titlepage.tex rewers.tex
+doc.pdf : doc.tex slownik_pojec.tex titlepage.tex rewers.tex zalozenia.tex
 	        xelatex doc.tex && xelatex doc.tex
 
 all : doc.pdf
