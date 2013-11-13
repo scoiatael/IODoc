@@ -1,0 +1,17 @@
+podział dokumentów:
+koncepcja ogólna -> petit
+specyfikacja wymagań -> petit
+harmonogram -> diana
+analiza przypadkow
+architektura
+kosztorys -> archi
+testowanie
+slownik -> diana
+wykaz dok -> petit
+
+
+
+wersje dokumentu
+historia
+wstep(cel dokumentu)
+
