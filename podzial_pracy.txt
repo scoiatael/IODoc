@@ -15,3 +15,8 @@ wersje dokumentu
 historia
 wstep(cel dokumentu)
 
+harmonogram -> usunąć kropki
+cudzysłowy poprawić
+spis treści
+myślniki
+

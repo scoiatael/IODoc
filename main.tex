@@ -1,0 +1,80 @@
+% Podstawowe definicje dla wszystkich dokumentów
+
+\documentclass[11pt]{mwart}
+\setlength{\textwidth}{83pt}
+
+\usepackage[OT4,plmath]{polski}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{listings,times}
+
+\usepackage{bbm}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{./images/}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\newcommand{\term}[1]{
+  \indent\textbf{#1}
+  \vspace{5pt}
+}
+
+\usepackage{multicol}
+
+\usepackage{lmodern} \normalfont
+%\DeclareFontShape{EU1}{ptm}{bx}{n} { <-> ssub * cmr/bx/n }{}
+%\DeclareFontShape{EU1}{ptm}{m}{sc} { <-> ssub * cmr/m/sc }{}
+
+\usepackage{titletoc}
+
+%\titlecontents{section}[3.8em]{}{\contentslabel{2.3em}}{\hspace*{-2.3em}}{\titlerule*[0.25pc]{ .}\contentspage}{}
+
+\newcommand{\titlep}[1] {
+  \begin{titlepage}
+    \begin{center}
+      \textsc{\LARGE Studencka Pracownia Inżynierii Oprogramowania}
+      \textsc{\LARGE Instytut Informatyki Uniwersytetu Wrocławskiego}\\[1.5cm]
+
+
+      \vspace{3cm}
+
+      % Author and supervisor
+      \begin{minipage}{\textwidth}
+        \begin{center} \Large
+          Łukasz \textsc{Czapliński},
+          Diana \textsc{Czepirska},
+          Artur \textsc{Jarocki}
+        \end{center}
+      \end{minipage}
+
+      \vspace{0.5cm}
+
+
+
+      % Title
+      \HRule \\[0.4cm]
+      { \Huge \bfseries Running\\free  \\[1cm] }
+
+      \textsc{\Large #1}\\[0.5cm]
+
+      \HRule \\[1.5cm]
+
+      \vspace{1cm}
+
+      \includegraphics[width=0.15\textwidth]{./non-starred.png}~\\[1cm]
+      
+      \vfill
+      
+
+      \vspace{1cm}
+
+      % Bottom of the page
+      {\large Wrocław 2013}
+
+    \end{center}
+  \end{titlepage}
+  \clearpage
+}
