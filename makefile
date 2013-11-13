@@ -1,12 +1,14 @@
 CC=xelatex
-FILES=$(wildcard .tex)
+FILES=$(wildcard *.tex)
 TRGS=koncepcja specyfikacja harmonogram analiza architektura kosztorys testowanie slownik spis
 PDF=$(TRGS:%=%.pdf)
 
+all : $(TRGS)
+
+% : %.pdf
+
 %.pdf : $(FILES)
 	        xelatex $*.tex && xelatex $*.tex
-
-all : $(TRGS)
 
 partial_clean : 
 	-rm -f *.aux *.log *.nav *.out *.snm *.toc *.vrb *.bbl *.blg

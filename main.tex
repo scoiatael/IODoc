@@ -1,7 +1,7 @@
 % Podstawowe definicje dla wszystkich dokumentów
 
 \documentclass[11pt]{mwart}
-\setlength{\textwidth}{83pt}
+%\setlength{\textwidth}{83pt}
 
 \usepackage[OT4,plmath]{polski}
 \usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
@@ -13,7 +13,8 @@
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{url}
 \usepackage{graphicx}
-\graphicspath{./images/}
+
+\graphicspath{{images/}}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -35,8 +36,8 @@
 \newcommand{\titlep}[1] {
   \begin{titlepage}
     \begin{center}
-      \textsc{\LARGE Studencka Pracownia Inżynierii Oprogramowania}
-      \textsc{\LARGE Instytut Informatyki Uniwersytetu Wrocławskiego}\\[1.5cm]
+      \textsc{\large Studencka Pracownia Inżynierii Oprogramowania}\\
+      \textsc{\LARGE Instytut Informatyki\\ Uniwersytet Wrocławski}\\[1.5cm]
 
 
       \vspace{3cm}
@@ -64,7 +65,7 @@
 
       \vspace{1cm}
 
-      \includegraphics[width=0.15\textwidth]{./non-starred.png}~\\[1cm]
+      \includegraphics[width=0.15\textwidth]{non-starred.png}~\\[1cm]
       
       \vfill
       
