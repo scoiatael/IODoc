@@ -33,11 +33,26 @@
 
 %\titlecontents{section}[3.8em]{}{\contentslabel{2.3em}}{\hspace*{-2.3em}}{\titlerule*[0.25pc]{ .}\contentspage}{}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead[\fancyplain{Projekt Iron Coach - \doctitle}{Projekt Iron Coach - \doctitle}]         
+    {\fancyplain{Projekt Iron Coach - \doctitle}{Projekt Iron Coach - \doctitle}}
+\lfoot[\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}]                 
+    {\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}}
+\cfoot[\fancyplain{}{}] {\fancyplain{}{}}
+\rfoot[\fancyplain{\thepage} {\thepage}]  {\fancyplain{\thepage}{\thepage}}
+
+
+%\pagestyle{myheadings}
+%\markright{Projekt Iron Coach \hfill \doctitle \hfill \rightmark}
+
+
 \newcommand{\titlep}[2] {
+  \newcommand{\doctitle}{#1}
   \begin{titlepage}
     \begin{center}
       \textsc{\large Studencka Pracownia Inżynierii Oprogramowania}\\
-      \textsc{\LARGE Instytut Informatyki\\ Uniwersytet Wrocławski}\\[1.5cm]
+      \textsc{\LARGE Uniwersytet Wrocławski \\Instytut Informatyki}\\[1.5cm]
 
 
       \vspace{3cm}
@@ -57,7 +72,7 @@
 
       % Title
       \HRule \\[0.4cm]
-      { \Huge \bfseries Running\\free  \\[1cm] }
+      { \Huge \bfseries Iron Coach  \\[1cm] }
 
       \textsc{\Large #1\\\large Wersja #2}\\[0.5cm]
 
@@ -78,4 +93,14 @@
     \end{center}
   \end{titlepage}
   \clearpage
+}
+
+\newcommand{\chist}[1]{
+  {\large{Historia zmian}} \\ \vspace{1cm}
+  \begin{tabular}{r | l | l}
+    Wersja & Opis & Autor \\ 
+    \hline
+    \noalign{\smallskip}
+    #1
+  \end{tabular}
 }
