@@ -31,17 +31,21 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead[\fancyplain{Projekt Iron Coach - \doctitle}{Iron Coach: \doctitle}]         
-    {\fancyplain{Projekt Iron Coach - \doctitle}{Iron Coach: \doctitle}}
-\lfoot[\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}]                 
-    {\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}}
-\cfoot[\fancyplain{}{}] {\fancyplain{}{}}
-\rfoot[\fancyplain{\thepage} {\thepage}]  {\fancyplain{\thepage}{\thepage}}
+\fancyhead{}
+\fancyhead[LE,LO]{Iron Coach. \doctitle}
+\fancyhead[RO,RE]{\rightmark}
+\fancyfoot{}
+\fancyfoot[LE,RO]{}
+\fancyfoot[CO,CE]{\thepage}
+\addtolength{\headheight}{1.5pt}
 
 
 %\pagestyle{myheadings}
 %\markright{Projekt Iron Coach \hfill \doctitle \hfill \rightmark}
 
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
 
 \newcommand{\titlep}[2] {
   \newcommand{\doctitle}{#1}
