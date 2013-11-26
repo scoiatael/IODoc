@@ -29,14 +29,10 @@
 %\DeclareFontShape{EU1}{ptm}{bx}{n} { <-> ssub * cmr/bx/n }{}
 %\DeclareFontShape{EU1}{ptm}{m}{sc} { <-> ssub * cmr/m/sc }{}
 
-\usepackage{titletoc}
-
-%\titlecontents{section}[3.8em]{}{\contentslabel{2.3em}}{\hspace*{-2.3em}}{\titlerule*[0.25pc]{ .}\contentspage}{}
-
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead[\fancyplain{Projekt Iron Coach - \doctitle}{Projekt Iron Coach - \doctitle}]         
-    {\fancyplain{Projekt Iron Coach - \doctitle}{Projekt Iron Coach - \doctitle}}
+\lhead[\fancyplain{Projekt Iron Coach - \doctitle}{Iron Coach: \doctitle}]         
+    {\fancyplain{Projekt Iron Coach - \doctitle}{Iron Coach: \doctitle}}
 \lfoot[\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}]                 
     {\fancyplain{Studencka Pracownia Inżynierii Oprogramowania}{Studencka Pracownia Inżynierii Oprogramowania}}
 \cfoot[\fancyplain{}{}] {\fancyplain{}{}}
@@ -72,6 +68,7 @@
 
       % Title
       \HRule \\[0.4cm]
+      { \Large Dokumentacja projektu \\[0.5cm] }
       { \Huge \bfseries Iron Coach  \\[1cm] }
 
       \textsc{\Large #1\\\large Wersja #2}\\[0.5cm]
@@ -96,11 +93,14 @@
 }
 
 \newcommand{\chist}[1]{
-  {\large{Historia zmian}} \\ \vspace{1cm}
-  \begin{tabular}{r | l | l}
-    Wersja & Opis & Autor \\ 
+  \begin{table}
+  \centering
+  \caption{Historia zmian}
+  \begin{tabular}{l | l | l | l}
+    Wersja & Data & Opis & Autor \\ 
     \hline
     \noalign{\smallskip}
     #1
   \end{tabular}
+\end{table}
 }
