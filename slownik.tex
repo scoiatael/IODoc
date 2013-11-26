@@ -1,14 +1,21 @@
 \input{./main}
 
 \newcommand{\dicen}[1]{
-  \indent\textbf{#1}
+\item\textbf{#1}
 }
 
 \begin{document}
 \titlep{Słownik pojęć}{1.1}
 
+\chist{1.0 & 2013-10-27 & Powstanie dokumentu & Diana Czepirska \\
+  1.1 & 2013-11-26 & Poprawki stylistyczne & Diana Czepirska, Łukasz Czapliński\\}
+
+\section{Słownik}
+\noindent Nietypowe terminy z dziedziny projektu Iron Coach
+\begin{multicols}{2}
+\begin{description}
 % \dicen{pojecie} - definicja
-	\noindent\dicen{automatyczna pauza (ang. \textit{auto pause})}-- działanie licznika polegające na tym, że poniżej danej prędkości zaczyna on działać jak podczas przerwy (tzn. przestaje naliczać czas i dystans) aż do momentu ponownego osiągnięcia większej prędkości.\\
+	\dicen{automatyczna pauza (ang. \textit{auto pause})}-- działanie licznika polegające na tym, że poniżej danej prędkości zaczyna on działać jak podczas przerwy (tzn. przestaje naliczać czas i dystans) aż do momentu ponownego osiągnięcia większej prędkości.\\
 	\dicen{bieg górski (ang. \textit{mountain running})}-- intensywny trening polegający na biegu w terenie, na którym suma przewyższeń stanowi minimum kilka procent (np. 5\%) całej trasy.\\
 	\dicen{energia (ang. \textit{energy})}-- oszacowane zużycie energii (podawane w kilokaloriach) podczas treningu.\\
 	\dicen{HIIT (z ang. \textit{High Intensity Interval Training} -- trening interwałowy o wysokiej intensywności)}-- rodzaj treningu interwałowego, który składa się z krótkich okresów bardzo intensywnego wysiłku przeplatanych krótkimi okresami umiarkowanego wysiłku, przykładowo: 30 sekund sprintu na przemian z 15 sekundami truchtu.\\
@@ -26,5 +33,6 @@
 	\dicen{trening (ang. \textit{training})}-- wykonanie zaplanowanego zestawu następujących po sobie ćwiczeń fizycznych (biegów) w określonym czasie. \\
 	\dicen{trening interwałowy (in. trening przedziałowy, ang. \textit{interval training})}-- trening podzielony na przedziały czasu z intensywnym wysiłkiem przeplatane przedziałami z odpoczynkiem lub wysiłkiem o mniejszej intensywności.\\
 	\dicen{trucht (ang. \textit{trot})}-- łagodna forma treningu. Charakteryzuje się niewielką prędkością biegu, długim dystansem oraz długim czasem trwania.\\
-
+  \end{description}
+\end{multicols}
 \end{document}
