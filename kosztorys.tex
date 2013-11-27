@@ -1,6 +1,50 @@
 \input{./main}
+
 \begin{document}
 \titlep{Kosztorys}{1.1}
+
+\section{Wstęp}
+Dokument ma na celu przybliżenie ostatecznego kosztu oraz czasu realizacji projektu Iron Coach. Do oszacowania została wykorzystana metoda COCOMO (ang. \textit{Constructive Cost Model}) w wersji podstawowej.
+
+\section{Szacowanie kosztów metodą COCOMO}
+\subsection{Szacowanie liczby linii kodu}
+By oszacować liczbę osobogodzin potrzebnych do wykonania projektu, należy najpierw określić przybliżoną liczbę linii kodu gotowego produktu. Jest ona przedstawiana w KDSI (ang. \textit{(K) delivered source instructions}) gdzie 1 KDSI = 1000 linijek kodu. Na podstawie kodu projektu MyTracks składającego się z ok. 5000 linii szacujemy, że kod źródłowy aplikacji Iron Coach nie przekroczy 8000 linii, czyli 8 KDSI.
+
+\subsection{Określenie złożoności}
+Projekt został przydzielony do grupy projektów łatwych (ang. \textit{organic mode}), gdyż wielkość KDSI nie przekracza 50, będzie realizowany przez mały zespół oraz presja czasu jest mała. W tabeli określono stałe, potrzebne do określenia kolejno nakładu pracy, czasu potrzebnego do ukończenia projektu oraz sugerowanej liczby osób do optymalnej realizacji. 
+
+\begin{equation}\label{Nakład pracy w osobomiesiącach}
+E = a_b(KDSI)^{b_b} = 21.31
+\end{equation}
+\begin{equation}\label{Czas potrzebny do ukończenia projektu}
+D = c_b(E)^{d_b} = 8.00
+\end{equation}
+\begin{equation}\label{Sugerowana liczba osób}
+P = \frac{E}{D} = 2.63
+\end{equation}
+
+Na podstawie wyliczonych danych przyjęto, że realizacja zadania będzie powierzona zespołowi trzech ekspertów, szacując czas wykonania na 7 miesięcy. Rozkład kosztów powiązany z kolejnymi etapami produkcji przedstawia tabela 2.
+
+\begin{table}[ht]
+\begin{center}
+\caption{Stałe łatewgo projektu COCOMO}
+\begin{tabular}{| l | c |}
+    \hline
+		Stała & Wartość \\
+	\hline
+		a & 2.4 \\
+	\hline
+		b & 1.05 \\
+	\hline
+		c & 2.5 \\
+	\hline
+		d & 0.38 \\
+    \hline
+
+ \end{tabular}
+ \end{center}
+ \end{table}
+
   \begin{table}[ht]
   \begin{center}
   \caption{Koszty pracy}
