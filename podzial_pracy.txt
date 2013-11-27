@@ -1,8 +1,8 @@
-podział dokumentów:
+﻿podział dokumentów:
 koncepcja ogólna -> petit
 specyfikacja wymagań -> petit
 harmonogram -> diana
-analiza przypadkow
+analiza przypadkow -> diana
 architektura
 kosztorys -> archi
 testowanie
