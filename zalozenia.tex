@@ -7,22 +7,57 @@
 \clearpage
 \section{Wprowadzenie}
 \subsection{Cel dokumentu}
-Poniższy dokument ma na celu przedstawienie pokrótce projektu Iron Coach i jego celu - aplikacji mobilnej. Jest to zarys bardziej szczegółowych specyfikacji rozwiniętych w reszcie dokumentacji projektu. Przedstawione są cele projektu, typowy użytkownik aplikacji oraz jego wymagania wobec niej, jak również prognozy dotyczące realizacji i odbioru. Następnie wypisano wymagania stawiane projektowi. Przedstawiono również jakie pomoce dla użytkownika (dokumentacja) będzie dołączona do apliacji.
+\noindent Poniższy dokument ma na celu przedstawienie pokrótce projektu Iron Coach i jego celu - aplikacji mobilnej. Jest to zarys bardziej szczegółowych specyfikacji rozwiniętych w reszcie dokumentacji projektu. Przedstawione są cele projektu, typowy użytkownik aplikacji oraz jego wymagania wobec niej, jak również prognozy dotyczące realizacji i odbioru. Następnie wypisano wymagania stawiane projektowi. Przedstawiono również jakie pomoce dla użytkownika (dokumentacja) będzie dołączona do apliacji.
 \subsection{Cel i nazwa projektu}
-Projekt ,,Iron Coach`` ma na celu napisanie aplikacji na urządzenia mobilne, której użytkownikami mają docelowo być osoby uprawiające różnego rodzaje sporty. Ma ona pomagać im w treningach -- ułatwiając ich planowanie oraz motywując do osiągania lepszych wyników. \\
+\noindent Projekt ,,Iron Coach`` ma na celu napisanie aplikacji na urządzenia mobilne, której użytkownikami mają docelowo być osoby uprawiające różnego rodzaje sporty. Ma ona pomagać im w treningach -- ułatwiając ich planowanie oraz motywując do osiągania lepszych wyników. \\
 Potrzeby użytkowników, jakie ma zaspokajać ta aplikacja można opisać bardzo prosto:\\ 
 ,,Wiele osób uprawiających sporty odczuwa różnorakie problemy (np mierzenie dystansu dla biegaczy, znajdywanie tras rowerowych dla cyklistów, drogi widokowej dla turystów, układanie planu treningów dla początkujących), które można rozwiązać aplikacją mobilną.``
 Rozwiązanie właśnie tych problemów jest celem projektu ,,Iron Coach``. 
-Nazwa projektu wzięła się z prostego zapożyczenia: tak jak ,,Iron man`` jest geniuszem w swojej dziedzinie, tak ,,Iron Coach`` będzie idealnym trenerem. Planowane jest stworzenie aplikacji w języku angielskim, w celu udostępnienia jej nie tylko dla polskich użytkowników.
+Nazwa projektu wzięła się z prostego zapożyczenia: tak jak ,,Iron Man©`` jest geniuszem w swojej dziedzinie, tak ,,Iron Coach`` będzie idealnym trenerem. Planowane jest stworzenie aplikacji w języku angielskim, w celu udostępnienia jej nie tylko dla polskich użytkowników.
 \section{Charakterystyka docelowego użytkownika}
+\noindent Wedle danych GUSu, ponad 37\% mieszkańców Polski uprawia różne sporty. Wiekszość z nich to amatorzy ze średniej klasy społecznej. Właśnie oni mają stać się użytkownikami aplikacji ,,Iron Coach``. Badanie przeprowadzone w fazie wstępnej projektu (\cite{Ba}) pokazują, że wielu amatorów sportu odczuwa problemy, które mogą być polem dla wielu innowacji.
+Podsumowując, docelowy użytkownik aplikacji ,,Iron Coach``:
+\begin{enumerate}
+  \item należy do średniej lub wyższej klasy (stać go na smartphone'a),
+  \item uprawia sport (amatorsko lub profesjonalnie),
+  \item ma niezaspokojne problemy związane ze swoim sportem, takie jak:
+    \begin{itemize}
+      \item nie potrafi sam ułożyć planu treningowego,
+      \item chciałby śledzić swoje osiągnięcia,
+      \item potrzebuje motywacji, by trenować regularnie.
+    \end{itemize}
+\end{enumerate}
 \section{Prognozy realizacji projektu i odbioru apliacji}
-\section{Podstawowe cechu funkcjonalne aplikacji}
-\section{Wymagania niefunkcjonalne stawiane projektowi i aplikacji}
+\subsection{Realizacja projektu}
+\noindent Prognozy dotyczące projektu i aplikacji można tworzyć na podstawie wielu obserwacji. Badania prowadzone w fazie wstępnej projektu ,,Iron Coach`` \cite{Ba} dotyczyły rynku aplikacji skierowanych dla sportowców. Wynikało z nich, że większość dostępnych na rynku aplikacji jest tworzona amatorsko i w związku z tym obciążona dużą ilością błędów związanych z brakiem kontroli jakości. Jednocześnie nie są one trudne do napisania (patrz \ref{pfunk}). Można więc twierdzić, iż projekt ,,Iron Coach`` ma wysokie szanse stworzenia aplikacji wolnej od błędów w określonym harmonogramem terminie (ok. 7 miesięcy, patrz \cite{Ha}). 
+\subsection{Odbiór aplikacji}
+\noindent Badano również rynek gadżetów dla amatorów sportów. Z dynamicznego rozwoju tego rynku można wnioskować, że wielu ludzi wydaje pieniądze na pomoce, jak np: ciśnieniomierz, gps, aparatu do pomiaru wyników i układania planów treningowych. Wszystkie te gadżety mogą być zastąpione przez jedną aplikację mobilną. Dodatkowa integracja jej z serwisem internetowym i aplikacja na komputery osobiste daje pole do rozwoju. Można więc śmiało wnioskować, że aplikacja ,,Iron Coach`` znajdzie odbiorców w dużej liczbie. 
+Podsumowując, wysokie szanse realizacji i rozwoju połączone z bogatą rzeszą odbiorców pozwalają dobrze rokować powodzeniu projektu ,,Iron Coach``.
+\section{Wygmagania stawiane projektowi i aplikacji}
+\subsection{Podstawowe cechu funkcjonalne aplikacji}
+\noindent Apliacja ,,Iron Coach`` powinna pozwalać użytkownikowi na:
+\begin{enumerate}
+  \item planowanie harmonogramu treningów,
+  \item łatwe motywowanie siebie do regularnych treningów,
+  \item śledzenie regularności i wyników treningów,
+  \item łatwe rozszerzanie o moduły treningowe (pobierane ze sklepu lub internetu), z których każdy moduł powinien pozwalać na:
+    \begin{enumerate}
+      \item przeprowadznie wybranego przez użytkownika treningu,
+      \item dopasowanie typu treningu do użytkownika,
+      \item przyznawanie nagród (ang. {\it "achievements"} \cite{Sł}) za wybitne osiągnięcia,
+      \item ocenę każdego z treningów,
+      \item kalibrację urządzeń stosowanych do pomiaru treningu.
+    \end{enumerate}
+\end{enumerate}
+\label{pfunk}
+\subsection{Wymagania niefunkcjonalne}
 \section{Dokumentacja projektu}
-Częścią programu będzie pomoc kontekstowa, która powinna zaspokajać podstawowe potrzeby normalnego użytkownika. Potrzebę sięgnięcia do dokumentacji projektowej i użytkowej powinni odczuwać użytkownicy mający nietypowe potrzeby wobec aplikacji. Dlatego będzie ona udostępniona razem z kodem źródłowym aplikacji.
+\noindent Częścią programu będzie pomoc kontekstowa, która powinna zaspokajać podstawowe potrzeby normalnego użytkownika. Potrzebę sięgnięcia do dokumentacji projektowej i użytkowej powinni odczuwać użytkownicy mający nietypowe potrzeby wobec aplikacji. Dlatego będzie ona udostępniona razem z kodem źródłowym aplikacji.
 \section{Słownik}
-Słownik specyficznych terminów, wymagających objaśnienia, użytych w tym i pozostałych dokumentach znajduje się w~\cite{Sł}.
+\noindent Słownik specyficznych terminów, wymagających objaśnienia, użytych w tym i pozostałych dokumentach znajduje się w~\cite{Sł}.
 \begin{thebibliography}{99}
   \bibitem{Sł} Łukasz Czapliński, Diana Czepirska, Artur Jarocki: {\it Dokumentacja projektu Iron Coach. Słownik pojęć}, Wrocław, SPIO IIUWr 2013
+  \bibitem{Ba} Przemysław Sierociński: {\it Iron Coach. Needfinding}, Wrocław, SPKCK IIUWr 2013
+  \bibitem{Ha} Łukasz Czapliński, Diana Czepirska, Artur Jarocki: {\it Dokumentacja projektu Iron Coach. Harmonogram}, Wrocław, SPIO IIUWr 2013
 \end{thebibliography}
 \end{document}
