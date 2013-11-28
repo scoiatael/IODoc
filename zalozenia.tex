@@ -31,26 +31,47 @@ Podsumowując, docelowy użytkownik aplikacji ,,Iron Coach``:
 \subsection{Realizacja projektu}
 \noindent Prognozy dotyczące projektu i aplikacji można tworzyć na podstawie wielu obserwacji. Badania prowadzone w fazie wstępnej projektu ,,Iron Coach`` \cite{Ba} dotyczyły rynku aplikacji skierowanych dla sportowców. Wynikało z nich, że większość dostępnych na rynku aplikacji jest tworzona amatorsko i w związku z tym obciążona dużą ilością błędów związanych z brakiem kontroli jakości. Jednocześnie nie są one trudne do napisania (patrz \ref{pfunk}). Można więc twierdzić, iż projekt ,,Iron Coach`` ma wysokie szanse stworzenia aplikacji wolnej od błędów w określonym harmonogramem terminie (ok. 7 miesięcy, patrz \cite{Ha}). 
 \subsection{Odbiór aplikacji}
-\noindent Badano również rynek gadżetów dla amatorów sportów. Z dynamicznego rozwoju tego rynku można wnioskować, że wielu ludzi wydaje pieniądze na pomoce, jak np: ciśnieniomierz, gps, aparatu do pomiaru wyników i układania planów treningowych. Wszystkie te gadżety mogą być zastąpione przez jedną aplikację mobilną. Dodatkowa integracja jej z serwisem internetowym i aplikacja na komputery osobiste daje pole do rozwoju. Można więc śmiało wnioskować, że aplikacja ,,Iron Coach`` znajdzie odbiorców w dużej liczbie. 
+\noindent Badano również rynek gadżetów dla amatorów sportów. Z dynamicznego rozwoju tego rynku można wnioskować, że wielu ludzi wydaje pieniądze na pomoce, jak np: ciśnieniomierz, gps, aparatu do pomiaru wyników i układania planów treningowych. Wszystkie te gadżety mogą być zastąpione przez jedną aplikację mobilną. Dodatkowa integracja jej z serwisem internetowym i aplikacja na komputery osobiste daje pole do rozwoju. Można więc śmiało wnioskować, że aplikacja ,,Iron Coach`` znajdzie odbiorców w dużej liczbie. \\
 Podsumowując, wysokie szanse realizacji i rozwoju połączone z bogatą rzeszą odbiorców pozwalają dobrze rokować powodzeniu projektu ,,Iron Coach``.
+\clearpage
 \section{Wygmagania stawiane projektowi i aplikacji}
 \subsection{Podstawowe cechu funkcjonalne aplikacji}
 \label{pfunk}
 \noindent Apliacja ,,Iron Coach`` powinna pozwalać użytkownikowi na:
-\begin{enumerate}
+\begin{itemize}
   \item planowanie harmonogramu treningów,
   \item łatwe motywowanie siebie do regularnych treningów,
   \item śledzenie regularności i wyników treningów,
   \item łatwe rozszerzanie o moduły treningowe (pobierane ze sklepu lub internetu), z których każdy moduł powinien pozwalać na:
-    \begin{enumerate}
+    \begin{itemize}
       \item przeprowadznie wybranego przez użytkownika treningu,
       \item dopasowanie typu treningu do użytkownika,
       \item przyznawanie nagród (ang. {\it "achievements"} \cite{Sł}) za wybitne osiągnięcia,
       \item ocenę każdego z treningów,
       \item kalibrację urządzeń stosowanych do pomiaru treningu.
-    \end{enumerate}
-\end{enumerate}
+    \end{itemize}
+\end{itemize}
 \subsection{Wymagania niefunkcjonalne}
+Aplikacja ,,Iron Coach`` powinna:
+\begin{itemize}
+  \item posiadać interfejs o następujących cechach:
+    \begin{itemize}
+      \item estetyczny,
+      \item intuicyjny, 
+      \item łatwy w obsłudze (oferujący pomoc kontekstową), 
+    \end{itemize}
+  \item dobrze reagować na polecenia użytkownika (reakcja do 0.5 sek),
+  \item dobrze oceniać trening użytkownika,
+  \item być niezawodna (mniej niż jeden błąd niekrytyczny na 2h treningów, brak błędów krytycznych),
+  \item dostępna do wydania na co najmniej dwóch głównych platformach mobilnych: android i iOS,
+  \item zgodna z wymogami i zaleceniami tworzenia aplikacji na platformę, na której działa (nie jest wymagane, aby naraz spełniała wszystkie wymogi).
+\end{itemize}
+Projekt ,,Iron Coach`` powinien:
+\begin{itemize}
+  \item na bieżąco informować o postępach w tworzeniu aplikacji,
+  \item nie ukrywać problemów w tworzeniu aplikacji,
+  \item spełniać wymogi zarządzania projektem PRINCE2.
+\end{itemize}
 \section{Dokumentacja projektu}
 \noindent Częścią programu będzie pomoc kontekstowa, która powinna zaspokajać podstawowe potrzeby normalnego użytkownika. Potrzebę sięgnięcia do dokumentacji projektowej i użytkowej powinni odczuwać użytkownicy mający nietypowe potrzeby wobec aplikacji. Dlatego będzie ona udostępniona razem z kodem źródłowym aplikacji.
 \section{Słownik}
