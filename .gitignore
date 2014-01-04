@@ -4,4 +4,6 @@
 *.toc
 .*
 *.pdf
+*.blg
+*.bbl
 
