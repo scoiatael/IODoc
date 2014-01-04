@@ -3,7 +3,7 @@ koncepcja ogólna -> petit
 specyfikacja wymagań -> petit
 harmonogram -> diana
 analiza przypadkow -> diana
-architektura
+architektura -> petit (zastapiona przez prototyp interfejsu)
 kosztorys -> archi
 testowanie
 slownik -> diana

@@ -1,0 +1,182 @@
+\input{./main}
+\begin{document}
+\titlep{Prototyp interfejsu \\iOS}{1.0}
+\chist{1.0 & 2013-10-26 & Powstanie dokumentu & Łukasz Czapliński\\
+        }
+\tableofcontents
+\clearpage
+\section{Wstęp}
+\subsection{Cel dokumentu}
+\noindent Ninejszy dokument opisuje makietę interfejsu aplikacji ,,Iron Coach'' w wersji na iOS. Ma ona służyć za podstawę dla gotowej aplikacji. Wymienione zostały problemy, na jakie należy zwrócić uwagę podczas implementacji, razem z sugerowanymi rozwiązaniami. W żadnym wypadku nie jest to kompletna lista i wszystkie aspekty powinny zostać przetestowane.
+\subsection{Struktura dokumentu}
+\noindent Dokument ten podzielony jest na dwie sekcje: pierwszą z nich stanowi wstęp, natomiast drugą właściwa makieta, wraz z opisem. Druga sekcja podzielona jest na podsekcje, z których każda opisuje jeden ekran aplikacji. W każdej podsekcji znajduje się makieta ekranu oraz opis przycisków (wraz z ekranami do których powinny prowadzić). Dodatkowo czasem znajduje się też lista ostrzeżeń -- potencjalnych błędnych danych, jakie może wprowadzić użytkownik na danym ekranie aplikacji.
+\section{Makieta}
+\subsection{Ekran główny}
+\subsubsection{Opis}
+\noindent Jest to ekran witający użytkownika po uruchomieniu aplikacji ,,Iron Coach''. Powinien zmieniać się, odzwierciedlając postępy użytkownika: jeśli użytkownik często biega, to powinien znaleźć się tam przycisk od tej właśnie aktywności. Jeśli jest to pierwsze uruchomienie aplikacji, to powinien zachęcić użytkownika do aktywności. Zamieszczono przykładowe makiety dla pierwszego uruchomienia oraz dla użytkownika biegającego często.
+\subsubsection{Ekrany}
+\begin{figure}[b!]
+  \includegraphics{Glowny1.png}
+  \caption{Ekran główny po pierwszym uruchomieniu}
+  \label{G1}
+\end{figure}
+\begin{figure}[b!]
+  \includegraphics{Glowny2.png}
+  \caption{Ekran główny biegacza}
+  \label{G2}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Start] -- powinien prowadzić do ekranu wyboru sportów~\ref{S1}. Tekst powinien odzwierciedlać stan treningu użytkownika -- jak długo już trenuje z aplikacją, szczególne osiągnięcia.
+  \item[Settings] -- powinien prowadzić do ekranu opcji. Nie powinien mieć na sobie żadnego tekstu poza "Settings". Ekran opcji powinien zawierać różne opcje, w zależności od platformy i implementacji, pozwalające na dopasowanie działania aplikacji do oczekiwań użytkownika.
+  \item[Main menu] -- napis na górnym pasku powinien zawierać powiadomienia o nowych dla użytkownika rzeczach (osiągnięciach, otrzymanych nagrodach). Mogą to być przyciski do bardziej szczegółowych opisów.
+  \item[History] -- powinien pozwalać na przejście do ekranu, w którym użytkownik może zobaczyć poprzednie treningi z aplikacją i ich podsumowania.
+  \item[Modify menu] -- po jego naciśnięciu użytkownik powinien mieć możliwosć modyfikacji ekranu głównego przez dodanie nowych przycisków -- p. dodatkowe przyciski, poniżej. Powinno odbywać się to w stylu zgodnym z platformą na jakiej aplikacjia jest uruchomiona.
+  \item[Dodatkowe przyciski] -- powinny pojawiać się w miarę treningu użytkownika z aplikacją, np. jeśli dużo biega to powinien pojawić się tu przycisk "Running", taki sam jak w ekranie wyboru sportów (\ref{S1}, \ref{PR}). Ułatwi to użytkownikowi szybkie rozpoczynanie treningów, bez zbędnego kilkania.
+\end{description}
+\subsection{Sporty}
+\subsubsection{Opis}
+\noindent Podobnie jak w ekranie głównym, ekran ten powinien dopasowywać się do użytkownika. Tutaj powinno odbywać się to przez pojawianie się dodatkowego tekstu na przyciskach, opisującego stan treningu w danym trybie. Aplikacja powinna pozwalać na dodanie nowych trybów treningowych. Z tego ekranu powinno być możliwe przejście do każdego z dostępnych aktualnie trybów treningowych.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{Sports1.png}
+  \caption{Ekran start po pierwszym uruchomieniu}
+  \label{S1}
+\end{figure}
+\begin{figure}[b!]
+  \includegraphics{Sports2.png}
+  \caption{Ekran start po dodaniu nowego trybu}
+  \label{S2}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Get more] -- powinien pozwalać na dodanie (np. pobranie ze sklepu, instalacja z wcześniej pobranej paczki lub wpisanie klucza) dodatkowego trybu treningowego.
+  \item[Back] -- cofnięcię się do poprzedniego ekranu (w tym przypadku głównego).
+  \item[Dodatkowe przyciski] -- dla każdego dostępnego trybu treningowego powinien być osobny przycisk (np. \ref{PR}), którego wygląd powinien odzwierciedlać postępy użytkownika w tym trybie.
+\end{description}
+\subsection{Running}
+\subsubsection{Opis}
+\noindent W podstawowj wersji, aplikacja ,,Iron Coach'' powinna zawierać przynajmniej moduł do biegania, którego makieta została tutaj opisana. Ekran ,,Plan a run'' pozwala na wybranie, w jakim trybie użytkownik chce biec. Dostępny powinien być przynajmniej tryb ,,Distance run''.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{PlanARun.png}
+  \caption{Ekran ,,Plan a run'' z czterema dostępnymi trybami}
+  \label{PR}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Back] -- powinien cofać do ekranu, z którego użytkownik przeszedł do obecnego.
+  \item[Dodatkowe przyciski] -- każdy z nich powinien przenosić do innego z dostępnych trybów treningowych (np. \ref{DR}), a wygląd powinien odzwierciedlać postępy w tym trybie.
+\end{description}
+\subsection{Distance run}
+\subsubsection{Opis}
+\noindent Ekran ten ma pozwolić użytkownikowi na dopasowanie, na jaki dokładnie dystans i jaką trasą chce biec. Ma dawać użytkownikowi możliwość trenigu progresywnego, przez wybieranie stopniowo dłuższych tras.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{DRun.png}
+  \caption{Ekran ,,Distance run'' z wybranym dystansem}
+  \label{DR}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Back] -- powinien cofać do ekranu, z którego użytkownik przeszedł do obecnego.
+  \item[Done] -- powinien przenosić do ekranu potwierdzenia (\ref{RR}).
+  \item[Set distance] -- powinien pozwalać na wybór długośći trasy. Wybór ten powinien być uwzględniony przy tworzeniu przykładowej trasy, jaka zostanie zaproponowana. Dodatkowe przebiegnięcie tego dystansu powinno być zasygnalizowane użytkownikowi.
+  \item[Open maps] -- powinien przenosić do ekranu mapy (\ref{M}) i dopasowanie szczegółów trasy.
+\end{description}
+\subsubsection{Ostrzeżenia}
+\noindent Może okazać się, że użytkownik wybierze bardzo długi lub krótki dystans (ogólnie lub w porównaniu z poprzednimi). Przed przejściem do kolejnego ekranu należy się upewnić, czy nie był to przypadek.
+\subsection{Maps}
+\subsubsection{Opis}
+\noindent Tutaj użytkownik powinien mieć możliwość dopasowania szczegółów trasy, jaką chce pobiec. Kilka tras powinno być już zasugerowanych (na podstawie poprzednich, wybranego dystansu, często bieganych przez innych użytkowników, itd).
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{Maps.png}
+  \caption{Ekran map}
+  \label{M}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Back] -- powinien cofać do ekranu, z którego użytkownik przeszedł do obecnego.
+  \item[Strzałki] -- powinny pozwalać na wybór w kilku sugerowanych tras.
+  \item[Done] -- powinien zatwierdzać wybór trasy.
+  \item[Mapa] -- klikanie i przeciąganie trasy na mapie powinno modyfikować trasę. Ogólnie nawigacja mapą powinna być znana użytkownikowi z innych aplikacji (np Google Maps©).
+\end{description}
+\subsubsection{Ostrzeżenia}
+\noindent Może okazać się, że nie można wyświetlić proponowanej trasy: może nie być pobrana, a użytkownik nie zezwolił na pobranie w tym momencie. Należy go o tym poinformować i nie wyświetlać tego ekranu. Może też się okazać, że wyłączony jest GPS i nie można ustalić pozycji użytkownika -- wówczas należy pozwolić użytkownikowi na własnoręczne wykreślenie trasy lub wybór z poprzednich. Może być i tak, że według danych aplikacji wybraną trasą nie można biec - np prowadzi przez rzekę bez mostu. O tym należy tylko poinformować użytkownika -- może okazać się, że wie o czymś, czego nie ma na mapie (lub potrafi dobrze pływać).
+\subsection{Gotów do biegu}
+\subsubsection{Opis}
+\noindent Celem tego ekranu jest upewnienie się, że użytkownik wybrał już wszystkie opcje i chce rozpocząć bieg. 
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{Ready.png}
+  \caption{Potwierdzenie, że użytkownik chce rozpocząć bieg}
+  \label{RR}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Back] -- powinien cofać do ekranu, z którego użytkownik przeszedł do obecnego.
+  \item[Start] -- powinien rozpoczynać bieg (przenosić do \ref{R}).
+\end{description}
+\subsection{Running}
+\subsubsection{Opis}
+\noindent Ekran śledzenia biegu -- obrazuje stan biegu: ile użytkownik już przebiegł, ile czasu mu to zajęło, jaką dalszą trasą powinien biec.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{Running.png}
+  \caption{Ekran biegu}
+  \label{R}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Lock] -- pozwala zablokować ekran, by nie dało się nic kliknąć: sposób odblokowania właściwy do platformy z jakiej korzysta użytkownik, na iOS-ie może to być przycisk ,,unlock'', który trzeba przesunąć.
+  \item[Pause] -- powinien pauzować bieg (ekran \ref{RP}).
+\end{description}
+\subsection{Pauza}
+\subsubsection{Opis}
+\noindent Ekran ten powinien być włączony, gdy użytkownik nie biegnie -- może się włączać automatycznie. Przestój może oznaczać, że użytkownik się zmęczył i chce przerwać bieg, rozmawia ze znajomym lub próbuje się zorientować jak biec dalej, bo trasa jaką planował jest zablokowana.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{RPaused.png}
+  \caption{Ekran pauzy}
+  \label{RP}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[Resume] -- pozwala na kontynuację biegu.
+  \item[Finish] -- użytkownik chce zakończyć aktualny bieg (ekran \ref{RS}).
+  \item[Modify] -- trasa przestała odpowiadać użytkownikowi, chce ją zmienić. Przenosi do ekranu ,,Maps'' (\ref{M}).
+\end{description}
+\subsection{Run Summary}
+\subsubsection{Opis}
+\noindent Ekran ten jest opisem zakończonego biegu: trasy, czasu i innych zapamiętanych szczegółów.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{RSummary.png}
+  \caption{Ekran podsumowania}
+  \label{RS}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[OK] -- pozwala na przejście dalej: jego zachowanie powinno być różne w zależności skąd użytkownik przeszedł do tego ekranu. Jeśli poprzednim ekranem był ekran biegu, to ten przycisk powinien przenosić do ekranu głównego. Jeśli był to ekran historii, to ten przycisk powinien do niego cofać.
+  \item[?] -- pozwala na poprawę szczegółów: być może trasa została źle wyznaczona lub dystans czy czas były inne (błąd pomiaru).
+  \item[How did you feel?] -- powinien pozwalać użytkownikowi na zapisanie dodatkowej obserwacji związanej z tym biegiem: jak się po nim czuł (ekran \ref{HF}). Pozwoli to na ocenę, jak użytkownik lubi biegać.
+\end{description}
+\subsubsection{Ostrzezenia}
+\noindent Ponieważ w tym ekranie użytkownik ma możliwość zmiany szczegółów, to przed wyjściem z niego należy się upewnić, że użytkownik chce ewentualne zmiany zapisać.
+\subsection{How did you feel?}
+\subsubsection{Opis}
+\noindent Ekran ten pozwala określić, jak użytkownik się czuje.
+\subsubsection{Ekran}
+\begin{figure}[b!]
+  \includegraphics{Feelings.png}
+  \caption{Ekran oceny odczuć}
+  \label{HF}
+\end{figure}
+Przyciski:\\
+\begin{description}
+  \item[=(] -- symbolizuje złe samopoczucie.
+  \item[=|] -- symbolizuje neutralne samopoczucie.
+  \item[=)] -- symbolizuje dobre samopoczucie.
+\end{description}
+\end{document}

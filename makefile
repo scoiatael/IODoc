@@ -1,6 +1,6 @@
 CC=xelatex
 FILES=$(wildcard *.tex)
-TRGS=założenia specyfikacja harmonogram analiza architektura kosztorys testowanie slownik spis
+TRGS=założenia specyfikacja harmonogram analiza prototyp kosztorys testowanie slownik spis
 PDF=$(TRGS:%=%.pdf)
 
 all : $(TRGS)
